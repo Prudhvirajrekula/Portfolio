@@ -1,1 +1,1 @@
-[My Live Project]([https://example.com](https://prudhvirajrekula.netlify.app/))
+[Link]([https://prudhvirajrekula.netlify.app/])
