@@ -1,1 +1,1 @@
-[Link]([https://prudhvirajrekula.netlify.app/])
+[View My Portfolio](https://prudhvirajrekula.netlify.app/)
