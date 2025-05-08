@@ -32,7 +32,7 @@ const Home = () => {
     <Container>
       <div className="text-center">
         <h1 className="text-6xl font-extrabold text-gray-900 font-[Gabriola]">Rekula Prudhvi Raj</h1>
-        <h2 className="text-3xl text-gray-600 mt-2 font-[Gabriola]">Software Engineer | Cybersecurity & Data Enthusiast</h2>
+        <h2 className="text-3xl text-gray-600 mt-2 font-[Gabriola]">Python Developer | Data Science & Cybersecurity</h2>
         
         {/* Only show dropdown toggle button if content is not expanded yet */}
         {!isExpanded && (
@@ -50,9 +50,11 @@ const Home = () => {
             {/* About Me Section with Underline */}
             <div className="mt-8 text-gray-700 font-[Gabriola] text-lg">
               <h3 className="text-3xl font-bold font-[Gabriola] text-center underline">About Me</h3>
-              <p className="mt-2">I’m a Python Full-Stack Developer and Computer Science graduate student at Pace University, seeking full-time roles in software developer, cybersecurity and data analyst.
+              <p className="mt-2">I’m a Python developer and Computer Science graduate student at Pace University, actively seeking full-time roles in data science, full-stack development, and cybersecurity. My experience spans building secure and scalable web applications, developing machine learning models, and implementing threat detection protocols.
 
-With experience in Cybersecurity, Software Engineering, and Data Analysis, I specialize in building secure, scalable applications, analyzing data for insights, and fortifying systems against threats. Skilled in React.js, Javascript, Python, AWS, and SQL, I thrive on solving complex problems and creating impactful solutions.</p>
+I’ve worked on real-world projects including credit card fraud detection using XGBoost, electric vehicle adoption analysis with Python and KeplerGL, and full-stack applications using React.js, Node.js, and MongoDB. I’ve also contributed to network security and penetration testing during cybersecurity Internships.
+
+My skill set includes Python, SQL, JavaScript, Scikit-learn, PyTorch, Tableau, AWS, and Git. I focus on solving practical problems with data, building efficient systems, and securing applications against evolving threats.</p>
             </div>
             
             {/* Education Section with Underline */}
@@ -126,46 +128,6 @@ const Projects = () => {
       <div className="grid grid-cols-2 gap-6">
         {[
           {
-            title: "Knee Osteoarthritis Prediction (Machine Learning & MRI Processing)",
-            link: "https://github.com/Prudhvirajrekula/Knee-Osteoarthritis-Prediction-Machine-Learning-MRI-Processing",
-            points: [
-              "Processed 31,000+ MRI slices to extract cartilage thickness measurements using MATLAB.",  
-"Trained MLP and Random Forest models, achieving a 74% ROC area, improving early detection rates.",  
-"Developed an automated preprocessing pipeline, reducing manual image processing time by 50%."
-            ]
-          },
-          {
-            title: "PawPraise",
-            link: "https://github.com/Prudhvirajrekula/PawPraise",
-            points: [
-              "Designed and implemented an e-commerce platform using MERN stack (MongoDB, React.js, Node.js) with secure authentication (JWT).",  
-"Developed an interactive user dashboard with personalized product recommendations based on user preferences.",
-"Optimized model performance, reducing prediction time by 30% through efficient data preprocessing and model selection."
-            ]
-          },
-          {
-            title: "Flight Management System",
-            link: "https://github.com/Prudhvirajrekula/Flight-Management-System",
-            points: [
-              "Led development of Flight Management System using Python and Tkinter, enhancing flight operations management efficiency by 40%.",
-
-"Implemented CRUD operations and integrated search functionality, reducing data retrieval time by 50%.",
-
-"Successfully managed a database of over 1000 flights and 2000 passenger records, ensuring seamless admin operations."
-            ]
-          },
-          {
-            title: "RFID Blocking Application (Python)",
-            link: "https://github.com/Prudhvirajrekula/RFID-BlockingApplication",
-            points: [
-              "Created an RFID Blocking Application that detects and alerts users of unauthorized RFID/NFC scans in real-time, enhancing data protection by 85%.",
-
-"Built the application using Python and the nfcpy library, achieving a 95% success rate in stopping potential skimming attacks.",
-
-"Designed an easy-to-use interface that shows Tag ID information to track potential threats, boosting user awareness by 70%."
-            ]
-          },
-          {
             title: "Credit Card Fraud Detection (Python, Pandas, Scikit-Learn, XGBoost)",
             link: "https://github.com/Prudhvirajrekula/Creditcard-Fraud-Detection",
             points: [
@@ -177,14 +139,56 @@ const Projects = () => {
             ]
           },
           {
-            title: "Electric Vehicle Data Analysis",
+            title: "Electric Vehicle Data Analysis (Python, Pandas, Scikit-learn, KeplerGL, Matplotlib)",
             link: "https://github.com/Prudhvirajrekula/Electric-Vehicle-DataAnalysis",
             points: [
               "Analyzed Electric Vehicle Population Data using Python, achieving a 30% increase in insights on EV adoption trends and distribution.",
 
-"Utilized KeplerGL to create interactive geospatial maps, visualizing EV distribution across Washington with 95% accuracy.",
+"Utilized KeplerGL to create Interactive geospatial maps, visualizing EV distribution across Washington with 95% accuracy.",
 
 "Implemented statistical modeling and data visualization techniques to identify key market insights, leading to a 40% improvement in data-driven decision-making."
+            ]
+          },
+          {
+            title: "Knee Osteoarthritis Prediction (Machine Learning & MRI Processing)",
+            link: "https://github.com/Prudhvirajrekula/Knee-Osteoarthritis-Prediction-Machine-Learning-MRI-Processing",
+            points: [
+              "Processed 31,000+ MRI slices to extract cartilage thickness measurements using MATLAB.",  
+"Trained MLP and Random Forest models, achieving a 74% ROC area, improving early detection rates.",  
+"Developed an automated preprocessing pipeline, reducing manual image processing time by 50%."
+            ]
+          },
+          {
+            title: "PawPraise (React.js, Node.js, Express, MongoDB, CSS)",
+            link: "https://github.com/Prudhvirajrekula/PawPraise",
+            points: [
+              "Designed and implemented an e-commerce platform using MERN stack (MongoDB, React.js, Node.js) with secure authentication (JWT).",  
+"Developed an interactive user dashboard with personalized product recommendations based on user preferences.",
+"Optimized model performance, reducing prediction time by 30% through efficient data preprocessing and model selection."
+            ]
+          },
+          {
+            title: "Network Port Monitoring Tool (Python, PyQt5, Matplotlib, psutil)",
+            link: "https://github.com/Prudhvirajrekula/Network-Port-Monitoring-Tool",
+            points: [
+              "Built a desktop-based GUI application using PyQt5 and Matplotlib to monitor active network ports and visualize real-time traffic data.",
+
+"Enabled live tracking of open/closed ports, protocol types, and IP endpoints to assist in anomaly detection and traffic analysis.",
+
+"Improved visibility into network activity for users and IT teams, reducing diagnostic time for connectivity and security issues.",
+
+"Demonstrates practical skills in system-level programming, user interface design, and network diagnostics."
+            ]
+          },
+          {
+            title: "RFID Blocking Application (Python)",
+            link: "https://github.com/Prudhvirajrekula/RFID-BlockingApplication",
+            points: [
+              "Created an RFID Blocking Application that detects and alerts users of unauthorized RFID/NFC scans in real-time, enhancing data protection by 85%.",
+
+"Built the application using Python and the nfcpy library, achieving a 95% success rate in stopping potential skimming attacks.",
+
+"Designed an easy-to-use interface that shows Tag ID information to track potential threats, boosting user awareness by 70%."
             ]
           }
         ].map((project, index) => (
