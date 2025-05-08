@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link, useLocation } from "react-router-dom";
 import { FaLinkedin, FaGithub, FaEnvelope, FaExternalLinkAlt, FaChevronDown } from "react-icons/fa";
 
 // Container component for consistent layout
@@ -93,8 +93,9 @@ With experience in Cybersecurity, Software Engineering, and Data Analysis, I spe
             {/* Social Media Icons */}
             <div className="mt-6 flex justify-center gap-6">
               {/* LinkedIn Icon */}
-              <a href="https://www.linkedin.com/in/prudhvirajrekula/" target="_blank" rel="noreferrer noopener" className="hover:text-blue-600 transition"> <FaLinkedin size={30} />
-</a>
+              <a href="https://www.linkedin.com/in/prudhvirajrekula/" target="_blank" className="hover:text-blue-600 transition">
+                <FaLinkedin size={30} />
+              </a>
 
               {/* GitHub Icon */}
               <a href="https://github.com/Prudhvirajrekula" target="_blank" className="hover:text-gray-900 transition">
