@@ -65,11 +65,12 @@
         <div class="section-title">
           <h2>About Me</h2>
           <p>
-            I'm a data professional with a Master's in Computer Science from Pace University, experienced in both
-            analytics and machine learning workflows. I work across data cleaning, exploratory analysis, predictive
-            modeling, and dashboard design—using tools like Python, SQL, Tableau, and Excel to extract insights and
-            support data-driven decisions. My work spans industries including real estate, tech, and sustainability,
-            with a focus on building solutions that are both technically sound and business-relevant.
+            I'm a data scientist and analyst with a Master's in Computer Science from Pace University. I work on machine
+            learning,
+            data pipelines, and dashboards to solve business problems. My skills include Python, SQL, PySpark, XGBoost,
+            LSTM, Tableau, and AWS tools like SageMaker and DynamoDB.
+            I've worked with large datasets and built models for churn, fraud, and forecasting. I focus on building
+            clean, reliable, and useful systems-nothing more, nothing less.
           </p>
         </div>
         <div class="row">
@@ -299,18 +300,31 @@
           <div class="row">
             <div class="col-4 col-sm-3 col-md-2 text-center py-1">
               <i class="bx bx-cloud-lightning" style="font-size:2rem;"></i>
-              <p class="mb-0">Apache Spark</p>
+              <p class="mb-0">Py Spark</p>
             </div>
             <div class="col-4 col-sm-3 col-md-2 text-center py-1">
               <i class="bx bxl-amazon" style="font-size:2rem;"></i>
               <p class="mb-0">AWS S3</p>
             </div>
             <div class="col-4 col-sm-3 col-md-2 text-center py-1">
-              <i class="bx bxl-google" style="font-size:2rem;"></i>
-              <p class="mb-0">Google Colab</p>
+              <i class="bx bxl-amazon" style="font-size:2rem;"></i>
+              <p class="mb-0">AWS SageMaker</p>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 text-center py-1">
+              <i class="bx bx-data" style="font-size:2rem;"></i>
+              <p class="mb-0">AWS Glue</p>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 text-center py-1">
+              <i class="bx bx-table" style="font-size:2rem;"></i>
+              <p class="mb-0">DynamoDB</p>
+            </div>
+            <div class="col-4 col-sm-3 col-md-2 text-center py-1">
+              <i class="bx bx-cube" style="font-size:2rem;"></i>
+              <p class="mb-0">Docker</p>
             </div>
           </div>
         </div>
+
 
         <!-- Business Intelligence -->
         <div class="skills-category mb-3">
@@ -395,18 +409,22 @@
           </div>
 
           <!-- Credit Card Fraud Detection -->
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="300">
-            <div class="btn02 open-modal-btn text-center" data-title="Credit Card Fraud Detection"
-              data-description="Deployed a Streamlit app for real-time fraud prediction using Random Forest on a 284K-record dataset, achieving 0.999 AUC with SMOTE and PCA features."
+          <!-- Credit Card Fraud Detection Platform -->
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="100">
+            <div class="btn02 open-modal-btn text-center" data-title="Credit Card Fraud Detection Platform"
+              data-description="Deployed a real-time fraud detection system on AWS using XGBoost and PySpark, with MLflow tracking and SageMaker inference endpoint."
               data-points='[
-            "Streamlit app with live CSV uploads",
-            "SMOTE + PCA for fraud signal amplification",
-            "Random Forest, 0.999 AUC"
-          ]' data-link="https://github.com/Prudhvirajrekula/Creditcard-Fraud-Detection">
-              <i class="fas fa-credit-card" style="font-size:2.5rem; color:var(--accent)"></i>
-              <h5 class="mt-3">Credit Card Fraud Detection</h5>
+      "Processed 250K+ transactions using PySpark with 0.17% fraud ratio",
+      "Achieved 0.91 G-Mean and 0.96 AUC with Optuna-tuned XGBoost model",
+      "Integrated MLflow for experiment tracking and modularized entire pipeline",
+      "Deployed real-time REST API with <120ms latency using AWS SageMaker endpoint",
+      "Simulated fraud alert system using AWS Glue and DynamoDB"
+    ]' data-link="https://github.com/Prudhvirajrekula/Advanced-Credit-Card-Fraud-Detection-Pipeline">
+              <i class="fas fa-shield-alt" style="font-size:2.5rem; color:var(--accent)"></i>
+              <h5 class="mt-3">Credit Card Fraud Detection Platform</h5>
             </div>
           </div>
+
 
           <!-- Real Estate Price Forecasting App -->
           <div class="col-lg-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
