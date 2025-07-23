@@ -20,8 +20,12 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/flip-cards.css" />
+  <link rel="stylesheet" href="assets/css/certification-cards.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <link rel="stylesheet" href="assets/css/timeline-enhanced.css" />
 </head>
 
 <body>
@@ -46,17 +50,121 @@
 
   <!-- HERO -->
   <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="section-banner">
+      <div id="star-1">
+        <div class="curved-corner-star">
+          <div id="curved-corner-bottomright"></div>
+          <div id="curved-corner-bottomleft"></div>
+        </div>
+        <div class="curved-corner-star">
+          <div id="curved-corner-topright"></div>
+          <div id="curved-corner-topleft"></div>
+        </div>
+      </div>
+
+      <div id="star-2">
+        <div class="curved-corner-star">
+          <div id="curved-corner-bottomright"></div>
+          <div id="curved-corner-bottomleft"></div>
+        </div>
+        <div class="curved-corner-star">
+          <div id="curved-corner-topright"></div>
+          <div id="curved-corner-topleft"></div>
+        </div>
+      </div>
+
+      <div id="star-3">
+        <div class="curved-corner-star">
+          <div id="curved-corner-bottomright"></div>
+          <div id="curved-corner-bottomleft"></div>
+        </div>
+        <div class="curved-corner-star">
+          <div id="curved-corner-topright"></div>
+          <div id="curved-corner-topleft"></div>
+        </div>
+      </div>
+
+      <div id="star-4">
+        <div class="curved-corner-star">
+          <div id="curved-corner-bottomright"></div>
+          <div id="curved-corner-bottomleft"></div>
+        </div>
+        <div class="curved-corner-star">
+          <div id="curved-corner-topright"></div>
+          <div id="curved-corner-topleft"></div>
+        </div>
+      </div>
+
+      <div id="star-5">
+        <div class="curved-corner-star">
+          <div id="curved-corner-bottomright"></div>
+          <div id="curved-corner-bottomleft"></div>
+        </div>
+        <div class="curved-corner-star">
+          <div id="curved-corner-topright"></div>
+          <div id="curved-corner-topleft"></div>
+        </div>
+      </div>
+
+      <div id="star-6">
+        <div class="curved-corner-star">
+          <div id="curved-corner-bottomright"></div>
+          <div id="curved-corner-bottomleft"></div>
+        </div>
+        <div class="curved-corner-star">
+          <div id="curved-corner-topright"></div>
+          <div id="curved-corner-topleft"></div>
+        </div>
+      </div>
+
+      <div id="star-7">
+        <div class="curved-corner-star">
+          <div id="curved-corner-bottomright"></div>
+          <div id="curved-corner-bottomleft"></div>
+        </div>
+        <div class="curved-corner-star">
+          <div id="curved-corner-topright"></div>
+          <div id="curved-corner-topleft"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Your existing hero content -->
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Prudhvi Raj</h1>
-      <p>
-        I'm an
-        <span class="typed" data-typed-items="Data Scientist, AI/ML Engineer, Data Analyst"></span>
-      </p>
-      <div class="social-links">
-        <a href="mailto:pr45629n@pace.edu" class="email"><i class="bx bx-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/prudhvirajrekula/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/Prudhvirajrekula" class="github"><i class="bx bxl-github"></i></a>
-      </div>
+      <p>I'm an <span class="typed" data-typed-items="Data Scientist, Data Analyst"></span></p>
+      <ul class="social-links">
+        <li class="icon-content">
+          <a href="https://www.linkedin.com/in/prudhvirajrekula/" aria-label="LinkedIn" data-social="linkedin">
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+            </svg>
+          </a>
+          <div class="tooltip">LinkedIn</div>
+        </li>
+        <li class="icon-content">
+          <a href="https://github.com/Prudhvirajrekula" aria-label="GitHub" data-social="github">
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+            </svg>
+          </a>
+          <div class="tooltip">GitHub</div>
+        </li>
+        <li class="icon-content">
+          <a href="mailto:prudhvimikey@gmail.com" aria-label="Email" data-social="email">
+            <div class="filled"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+            </svg>
+          </a>
+          <div class="tooltip">Email</div>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -472,177 +580,7 @@
       </div>
     </section>
 
-    <style>
-      /* CERTS CARDS - USE PROJECT CARD STYLE, BLEND INTO SITE */
-      .certs-marquee-controls {
-        width: 100%;
-        margin: 0 auto 0.5rem auto;
-        position: relative;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.7rem;
-      }
 
-      .certs-arrow-btn {
-        background: rgba(18, 28, 46, 0.99);
-        border: 1.5px solid #36a1ff;
-        border-radius: 50%;
-        width: 36px;
-        height: 36px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        color: #36a1ff;
-        cursor: pointer;
-        box-shadow: 0 2px 12px #0002;
-        transition: background 0.14s, color 0.14s, border 0.18s;
-        z-index: 3;
-      }
-
-      .certs-arrow-btn:hover,
-      .certs-arrow-btn:focus {
-        background: #36a1ff;
-        color: #fff;
-        border: 1.5px solid #1574cf;
-      }
-
-      .certs-marquee-outer {
-        width: 100%;
-        overflow: hidden;
-        background: transparent;
-        margin: 0 auto;
-        flex: 1 1 auto;
-        padding: 0 0.5vw;
-      }
-
-      /* Main flex row for certs */
-      .certs-marquee {
-        display: flex;
-        align-items: stretch;
-        gap: 2.1rem;
-        will-change: transform;
-        transition: transform 0.44s cubic-bezier(.61, .51, .32, 1.2);
-      }
-
-      /* Project/Cert Card style */
-      .cert-card-mq {
-        flex: 0 0 238px;
-        max-width: 238px;
-        min-width: 176px;
-        background: rgba(26, 33, 47, 0.36);
-        /* lighter + more transparent */
-        border: 2px solid #242f3d90;
-        border-radius: 18px;
-        box-shadow: 0 1.5px 14px #101420ab, 0 4px 24px #00122244;
-        padding: 1.1rem 1.1rem 1.05rem 1.1rem;
-        margin: 0 0.05rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        text-decoration: none !important;
-        transition:
-          transform 0.19s cubic-bezier(.61, .51, .32, 1.2),
-          box-shadow 0.19s,
-          border 0.20s,
-          background 0.24s;
-        cursor: pointer;
-        color: #e6e6e6;
-        font-size: 1.04rem;
-        min-height: 170px;
-        /* GLASS EFFECT */
-        backdrop-filter: blur(10px) saturate(150%);
-        -webkit-backdrop-filter: blur(10px) saturate(150%);
-      }
-
-
-      .cert-card-mq:hover,
-      .cert-card-mq:focus {
-        background: rgba(30, 68, 128, 0.16);
-        /* No transform, so no enlarge or move */
-        box-shadow: 0 0 24px #1574cf52, 0 20px 28px #00122244;
-        border: 2px solid #36a1ffba;
-        z-index: 2;
-      }
-
-
-
-      .cert-card-mq img {
-        width: 38px;
-        height: 38px;
-        object-fit: contain;
-        margin-bottom: 0.6rem;
-        margin-top: 0.05rem;
-      }
-
-      .cert-title {
-        color: #e6e6e6;
-        font-size: 1.09rem;
-        font-weight: 600;
-        margin-bottom: 0.12rem;
-        line-height: 1.25;
-      }
-
-      .cert-org {
-        color: #36a1ff;
-        font-size: 0.98rem;
-        font-weight: 400;
-        margin-bottom: 0.13rem;
-      }
-
-      @media (max-width: 1100px) {
-        .cert-card-mq {
-          max-width: 170px;
-          min-width: 110px;
-          font-size: 0.93rem;
-        }
-
-        .cert-title {
-          font-size: 1rem;
-        }
-      }
-
-      @media (max-width: 900px) {
-        .certs-marquee {
-          gap: 1.1rem;
-        }
-
-        .cert-card-mq {
-          max-width: 140px;
-          min-width: 108px;
-          font-size: 0.84rem;
-        }
-      }
-
-      @media (max-width: 700px) {
-        .cert-card-mq {
-          max-width: 110px;
-          min-width: 78px;
-          font-size: 0.76rem;
-        }
-
-        .cert-title {
-          font-size: 0.90rem;
-        }
-
-        .cert-org {
-          font-size: 0.76rem;
-        }
-      }
-
-      @media (max-width: 600px) {
-        .certs-marquee {
-          gap: 0.41rem;
-        }
-
-        .certs-marquee-outer {
-          padding: 0 1px;
-        }
-      }
-    </style>
 
     <script>
       const marquee = document.getElementById('certsMarquee');
@@ -690,93 +628,310 @@
         <div class="row">
 
           <!-- Muffin: GenAI Chatbot for Churn Explainability -->
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="100">
-            <div class="btn02 open-modal-btn text-center"
-              data-title="Muffin – Customer Churn & LTV Intelligence Platform"
-              data-description="Built a GenAI-powered assistant using Gemini 2.0 Flash and SentenceTransformers to explain churn risk in plain language with 90%+ relevance across 100+ insights."
-              data-points='[
-                "Integrated Gemini 2.0 Flash (Google AI) via Gemini API",
-                "Fallback chaining + semantic similarity with SentenceTransformers",
-                "Deployed real-time chatbot in Streamlit with over 100 tailored business insights"
-          ]' data-link="https://churn-gemini.streamlit.app/">
-              <i class="fas fa-robot" style="font-size:2.5rem; color:var(--accent)"></i>
-              <h5 class="mt-3">Muffin - GenAI Assitant for Churn Explainability</h5>
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+            <div class="project-card">
+              <div class="card-content">
+                <div class="card-front">
+                  <div class="project-icon">
+                    <i class="fas fa-robot"></i>
+                  </div>
+                  <div class="front-content">
+                    <div class="project-badges">
+                      <div class="project-badge">GenAI</div>
+                      <div class="project-badge">NLP</div>
+                      <div class="project-badge">LLM</div>
+                    </div>
+                    <div class="project-description">
+                      <div class="project-title">
+                        <h5>Muffin - GenAI Assistant</h5>
+                        <p>For Churn Explainability</p>
+                      </div>
+                      <div class="project-footer">Built with Gemini 2.0 Flash & SentenceTransformers</div>
+                    </div>
+                  </div>
+                  <div class="floating-circle bottom"></div>
+                  <div class="floating-circle right"></div>
+                </div>
+                <div class="card-back">
+                  <div class="card-back-content">
+                    <div class="card-back-top">
+                      <h5 class="card-back-title">Tech Stack</h5>
+                      <ul class="back-tech-list">
+                        <li>Gemini 2.0 Flash</li>
+                        <li>SentenceTransformers</li>
+                        <li>Streamlit</li>
+                        <li>Python</li>
+                        <li>NLP</li>
+                      </ul>
+                    </div>
+                    <div class="card-back-middle">
+                      <p class="back-project-description">AI chatbot that explains customer churn risk in plain language
+                        using advanced NLP.</p>
+                    </div>
+                    <div class="card-back-bottom">
+                      <a href="https://churn-gemini.streamlit.app/" target="_blank" class="back-project-link">View
+                        Project</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Customer Churn & LTV Intelligence Platform -->
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
-            <div class="btn02 open-modal-btn text-center" data-title="Customer Churn & LTV Intelligence Platform"
-              data-description="Developed a full-stack analytics platform integrating SQL feature engineering, Python ETL automation, and an interactive Streamlit dashboard to model churn and lifetime value across 100K+ customers."
-              data-points='[
-            "14+ modular SQL pipelines for churn, LTV, and recency-based features",
-            "Automated ETL: Raw CSV → MySQL → Streamlit app",
-            "Delivered 40% faster insights through real-time visual dashboards"
-          ]' data-link="https://github.com/Prudhvirajrekula/customer-churn-prediction-2.0">
-              <i class="fas fa-chart-bar" style="font-size:2.5rem; color:var(--accent)"></i>
-              <h5 class="mt-3">Churn & LTV Intelligence Platform</h5>
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200">
+            <div class="project-card">
+              <div class="card-content">
+                <div class="card-front">
+                  <div class="project-icon">
+                    <i class="fas fa-chart-bar"></i>
+                  </div>
+                  <div class="front-content">
+                    <div class="project-badges">
+                      <div class="project-badge">Data Science</div>
+                      <div class="project-badge">Analytics</div>
+                      <div class="project-badge">ML</div>
+                    </div>
+                    <div class="project-description">
+                      <div class="project-title">
+                        <h5>Churn & LTV Intelligence</h5>
+                        <p>Full-Stack Analytics Platform</p>
+                      </div>
+                      <div class="project-footer">SQL + Python ETL + Streamlit Dashboard</div>
+                    </div>
+                  </div>
+                  <div class="floating-circle bottom"></div>
+                  <div class="floating-circle right"></div>
+                </div>
+                <div class="card-back">
+                  <div class="card-back-content">
+                    <div class="card-back-top">
+                      <h5 class="card-back-title">Tech Stack</h5>
+                      <ul class="back-tech-list">
+                        <li>SQL</li>
+                        <li>Python</li>
+                        <li>MySQL</li>
+                        <li>Streamlit</li>
+                        <li>ETL</li>
+                      </ul>
+                    </div>
+                    <div class="card-back-middle">
+                      <p class="back-project-description">Full-stack platform predicting customer churn and lifetime
+                        value with automated ETL pipelines.</p>
+                    </div>
+                    <div class="card-back-bottom">
+                      <a href="https://github.com/Prudhvirajrekula/customer-churn-prediction-2.0" target="_blank"
+                        class="back-project-link">View GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Credit Card Fraud Detection -->
           <!-- Credit Card Fraud Detection Platform -->
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="100">
-            <div class="btn02 open-modal-btn text-center" data-title="Credit Card Fraud Detection Platform"
-              data-description="Deployed a real-time fraud detection system on AWS using XGBoost and PySpark, with MLflow tracking and SageMaker inference endpoint."
-              data-points='[
-      "Processed 250K+ transactions using PySpark with 0.17% fraud ratio",
-      "Achieved 0.91 G-Mean and 0.96 AUC with Optuna-tuned XGBoost model",
-      "Integrated MLflow for experiment tracking and modularized entire pipeline",
-      "Deployed real-time REST API with <120ms latency using AWS SageMaker endpoint",
-      "Simulated fraud alert system using AWS Glue and DynamoDB"
-    ]' data-link="https://github.com/Prudhvirajrekula/Advanced-Credit-Card-Fraud-Detection-Pipeline">
-              <i class="fas fa-shield-alt" style="font-size:2.5rem; color:var(--accent)"></i>
-              <h5 class="mt-3">Credit Card Fraud Detection Platform</h5>
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="300">
+            <div class="project-card">
+              <div class="card-content">
+                <div class="card-front">
+                  <div class="project-icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <div class="front-content">
+                    <div class="project-badges">
+                      <div class="project-badge">ML</div>
+                      <div class="project-badge">AWS</div>
+                      <div class="project-badge">Fraud Detection</div>
+                    </div>
+                    <div class="project-description">
+                      <div class="project-title">
+                        <h5>Fraud Detection Platform</h5>
+                        <p>Real-time ML on AWS</p>
+                      </div>
+                      <div class="project-footer">XGBoost + PySpark + SageMaker</div>
+                    </div>
+                  </div>
+                  <div class="floating-circle bottom"></div>
+                  <div class="floating-circle right"></div>
+                </div>
+                <div class="card-back">
+                  <div class="card-back-content">
+                    <div class="card-back-top">
+                      <h5 class="card-back-title">Tech Stack</h5>
+                      <ul class="back-tech-list">
+                        <li>XGBoost</li>
+                        <li>PySpark</li>
+                        <li>AWS SageMaker</li>
+                        <li>MLflow</li>
+                        <li>DynamoDB</li>
+                      </ul>
+                    </div>
+                    <div class="card-back-middle">
+                      <p class="back-project-description">Real-time AWS fraud detection system with 96% accuracy and
+                        <120ms response time.</p>
+                    </div>
+                    <div class="card-back-bottom">
+                      <a href="https://github.com/Prudhvirajrekula/Advanced-Credit-Card-Fraud-Detection-Pipeline"
+                        target="_blank" class="back-project-link">View GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
 
           <!-- Real Estate Price Forecasting App -->
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
-            <div class="btn02 open-modal-btn text-center" data-title="Real Estate Price Forecasting App"
-              data-description="Built a full-stack ML solution using XGBoost, Random Forest, and Streamlit to forecast real estate sale prices in Connecticut using 20+ features."
-              data-points='[
-            "20+ features engineered from time, geography, and property type",
-            "Exploratory Data Analysis (EDA) and outlier handling",
-            "Cross-validation, GridSearchCV, and model saving with joblib",
-            "Deployed as an interactive web app using Streamlit and gdown"
-          ]' data-link="https://github.com/Prudhvirajrekula/Real-Estate-Price-Forecasting-Connecticut">
-              <i class="fas fa-home" style="font-size:2.5rem; color:var(--accent)"></i>
-              <h5 class="mt-3">Real Estate Price Forecasting</h5>
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="400">
+            <div class="project-card">
+              <div class="card-content">
+                <div class="card-front">
+                  <div class="project-icon">
+                    <i class="fas fa-home"></i>
+                  </div>
+                  <div class="front-content">
+                    <div class="project-badges">
+                      <div class="project-badge">ML</div>
+                      <div class="project-badge">Forecasting</div>
+                      <div class="project-badge">Regression</div>
+                    </div>
+                    <div class="project-description">
+                      <div class="project-title">
+                        <h5>Real Estate Forecasting</h5>
+                        <p>ML Price Prediction App</p>
+                      </div>
+                      <div class="project-footer">XGBoost + Random Forest + Streamlit</div>
+                    </div>
+                  </div>
+                  <div class="floating-circle bottom"></div>
+                  <div class="floating-circle right"></div>
+                </div>
+                <div class="card-back">
+                  <div class="card-back-content">
+                    <div class="card-back-top">
+                      <h5 class="card-back-title">Tech Stack</h5>
+                      <ul class="back-tech-list">
+                        <li>XGBoost</li>
+                        <li>Random Forest</li>
+                        <li>Streamlit</li>
+                        <li>Python</li>
+                        <li>Joblib</li>
+                      </ul>
+                    </div>
+                    <div class="card-back-middle">
+                      <p class="back-project-description">ML web app for Connecticut real estate price prediction with
+                        interactive user interface.</p>
+                    </div>
+                    <div class="card-back-bottom">
+                      <a href="https://github.com/Prudhvirajrekula/Real-Estate-Price-Forecasting-Connecticut"
+                        target="_blank" class="back-project-link">View GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- EV Insights & Prediction -->
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="500">
-            <div class="btn02 open-modal-btn text-center" data-title="EV Insights & Prediction App"
-              data-description="Built a Streamlit app using 50K+ EV records to analyze regional trends and predict vehicle type with 94% model accuracy."
-              data-points='[
-            "Interactive app with Streamlit",
-            "Geospatial analysis via KeplerGL",
-            "94% accurate Random Forest model"
-          ]' data-link="https://github.com/Prudhvirajrekula/EV-Insights-WA-Streamlit-App">
-              <i class="fas fa-charging-station" style="font-size:2.5rem; color:var(--accent)"></i>
-              <h5 class="mt-3">Washington EV Prediction App</h5>
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="500">
+            <div class="project-card">
+              <div class="card-content">
+                <div class="card-front">
+                  <div class="project-icon">
+                    <i class="fas fa-charging-station"></i>
+                  </div>
+                  <div class="front-content">
+                    <div class="project-badges">
+                      <div class="project-badge">Data Science</div>
+                      <div class="project-badge">Geospatial</div>
+                      <div class="project-badge">Prediction</div>
+                    </div>
+                    <div class="project-description">
+                      <div class="project-title">
+                        <h5>EV Prediction App</h5>
+                        <p>Washington State Analysis</p>
+                      </div>
+                      <div class="project-footer">Streamlit + KeplerGL + Random Forest</div>
+                    </div>
+                  </div>
+                  <div class="floating-circle bottom"></div>
+                  <div class="floating-circle right"></div>
+                </div>
+                <div class="card-back">
+                  <div class="card-back-content">
+                    <div class="card-back-top">
+                      <h5 class="card-back-title">Tech Stack</h5>
+                      <ul class="back-tech-list">
+                        <li>Streamlit</li>
+                        <li>KeplerGL</li>
+                        <li>Random Forest</li>
+                        <li>Python</li>
+                        <li>Pandas</li>
+                      </ul>
+                    </div>
+                    <div class="card-back-middle">
+                      <p class="back-project-description">Interactive EV analytics dashboard with geospatial mapping and
+                        94% prediction accuracy.</p>
+                    </div>
+                    <div class="card-back-bottom">
+                      <a href="https://github.com/Prudhvirajrekula/EV-Insights-WA-Streamlit-App" target="_blank"
+                        class="back-project-link">View GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Tableau Job Market Dashboard -->
-          <div class="col-lg-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
-            <div class="btn02 open-modal-btn text-center" data-title="USA Job-Market Analysis Dashboard"
-              data-description="Created a Tableau dashboard analyzing 10K+ U.S. job postings to reveal hiring trends, salary insights, and experience levels across data-focused roles."
-              data-points='[
-            "10K+ job postings analyzed",
-            "Salary gap insights by role level",
-            "Handled 1,195 missing values"
-          ]'
-              data-link="https://public.tableau.com/app/profile/prudhvi.raj5686/viz/USA_Job_Market_Analysis/JobAnalysis">
-              <i class="fas fa-chart-pie" style="font-size:2.5rem; color:var(--accent)"></i>
-              <h5 class="mt-3">Job Market Dashboard (Tableau)</h5>
+          <div class="col-lg-4 col-md-6 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="600">
+            <div class="project-card">
+              <div class="card-content">
+                <div class="card-front">
+                  <div class="project-icon">
+                    <i class="fas fa-chart-pie"></i>
+                  </div>
+                  <div class="front-content">
+                    <div class="project-badges">
+                      <div class="project-badge">Data Analysis</div>
+                      <div class="project-badge">BI</div>
+                      <div class="project-badge">Data Visualization</div>
+                    </div>
+                    <div class="project-description">
+                      <div class="project-title">
+                        <h5>Job Market Dashboard</h5>
+                        <p>USA Hiring Trends Analysis</p>
+                      </div>
+                      <div class="project-footer">Tableau + Data Visualization</div>
+                    </div>
+                  </div>
+                  <div class="floating-circle bottom"></div>
+                  <div class="floating-circle right"></div>
+                </div>
+                <div class="card-back">
+                  <div class="card-back-content">
+                    <div class="card-back-top">
+                      <h5 class="card-back-title">Tech Stack</h5>
+                      <ul class="back-tech-list">
+                        <li>Tableau</li>
+                        <li>Data Analysis</li>
+                        <li>Visualization</li>
+                        <li>Statistics</li>
+                        <li>Excel</li>
+                      </ul>
+                    </div>
+                    <div class="card-back-middle">
+                      <p class="back-project-description">Tableau dashboard analyzing 10K+ job postings with salary
+                        insights across data roles.</p>
+                    </div>
+                    <div class="card-back-bottom">
+                      <a href="https://public.tableau.com/app/profile/prudhvi.raj5686/viz/USA_Job_Market_Analysis/JobAnalysis"
+                        target="_blank" class="back-project-link">View Dashboard</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -887,9 +1042,9 @@
   <!-- FOOTER -->
   <footer id="footer">
     <div class="container">
-      <h3>Prudhvi Raj</h3>
+      <h3>Contact Me</h3>
       <div class="social-links">
-        <a href="mailto:pr45629n@pace.edu"><i class="bx bx-envelope"></i></a>
+        <a href="mailto:prudhvimikey@gmail.com"><i class="bx bx-envelope"></i></a>
         <a href="https://www.linkedin.com/in/prudhvirajrekula/">
           <i class="bx bxl-linkedin"></i>
         </a>
@@ -950,6 +1105,735 @@
       document.documentElement.style.setProperty("--my", y);
     });
   </script>
+
+  <!-- Hero Elite Styles -->
+  <style>
+    .hero-elite {
+      min-height: 100vh;
+      background: rgba(8, 14, 22, 0.94);
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 3D WebGL Canvas */
+    .hero-3d-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      pointer-events: none;
+      opacity: 0.8;
+    }
+
+    /* Wireframe 3D Elements */
+    .hero-wireframes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .wireframe-cube {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      top: 15%;
+      right: 10%;
+      border: 2px solid rgba(54, 161, 255, 0.3);
+      background: transparent;
+      transform-style: preserve-3d;
+      animation: rotate3d 20s infinite linear;
+    }
+
+    .wireframe-cube::before,
+    .wireframe-cube::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 2px solid rgba(54, 161, 255, 0.2);
+      background: transparent;
+    }
+
+    .wireframe-cube::before {
+      transform: rotateY(90deg) translateZ(60px);
+    }
+
+    .wireframe-cube::after {
+      transform: rotateX(90deg) translateZ(60px);
+    }
+
+    .wireframe-sphere {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 70%;
+      left: 8%;
+      border: 2px solid rgba(54, 161, 255, 0.25);
+      border-radius: 50%;
+      background: transparent;
+      animation: float3d 15s infinite ease-in-out, rotate3d 25s infinite linear;
+    }
+
+    .wireframe-sphere::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 2px solid rgba(54, 161, 255, 0.15);
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      transform: rotateY(90deg);
+    }
+
+    .wireframe-pyramid {
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 40%;
+      right: 25%;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-bottom: 80px solid rgba(54, 161, 255, 0.2);
+      animation: float3d 18s infinite ease-in-out reverse, rotate3d 30s infinite linear;
+      transform-origin: center bottom;
+    }
+
+    .wireframe-pyramid::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 40px;
+      left: -35px;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      border-bottom: 70px solid rgba(54, 161, 255, 0.1);
+      transform: rotateY(120deg);
+    }
+
+    @keyframes rotate3d {
+      0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      }
+
+      33% {
+        transform: rotateX(120deg) rotateY(120deg) rotateZ(0deg);
+      }
+
+      66% {
+        transform: rotateX(240deg) rotateY(240deg) rotateZ(120deg);
+      }
+
+      100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+      }
+    }
+
+    @keyframes float3d {
+
+      0%,
+      100% {
+        transform: translateY(0px) translateX(0px) rotateX(0deg);
+        opacity: 0.7;
+      }
+
+      25% {
+        transform: translateY(-30px) translateX(20px) rotateX(15deg);
+        opacity: 0.9;
+      }
+
+      50% {
+        transform: translateY(0px) translateX(40px) rotateX(0deg);
+        opacity: 0.7;
+      }
+
+      75% {
+        transform: translateY(30px) translateX(20px) rotateX(-15deg);
+        opacity: 0.9;
+      }
+    }
+
+    .hero-bg-particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* Enhanced particle effects */
+    .particle-3d {
+      position: absolute;
+      background: radial-gradient(circle, rgba(54, 161, 255, 0.8) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      animation: particle3dFloat 8s infinite ease-in-out;
+    }
+
+    @keyframes particle3dFloat {
+
+      0%,
+      100% {
+        transform: translate3d(0, 0, 0) scale(1);
+        opacity: 0.6;
+      }
+
+      25% {
+        transform: translate3d(30px, -40px, 20px) scale(1.2);
+        opacity: 1;
+      }
+
+      50% {
+        transform: translate3d(-20px, -80px, -10px) scale(0.8);
+        opacity: 0.4;
+      }
+
+      75% {
+        transform: translate3d(-40px, -40px, 30px) scale(1.1);
+        opacity: 0.8;
+      }
+    }
+
+    .hero-bg-gradient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(54, 161, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(21, 116, 207, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 40% 70%, rgba(54, 161, 255, 0.05) 0%, transparent 50%);
+      opacity: 0.6;
+      z-index: -1;
+      animation: gradientShift 20s infinite ease-in-out;
+    }
+
+    @keyframes gradientShift {
+
+      0%,
+      100% {
+        opacity: 0.6;
+        transform: scale(1) rotate(0deg);
+      }
+
+      50% {
+        opacity: 0.8;
+        transform: scale(1.1) rotate(180deg);
+      }
+    }
+
+    .hero-floating-shapes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .floating-shape {
+      position: absolute;
+      background: linear-gradient(45deg, rgba(54, 161, 255, 0.1), rgba(21, 116, 207, 0.05));
+      border: 1px solid rgba(54, 161, 255, 0.2);
+      backdrop-filter: blur(2px);
+      animation: float3d 12s infinite ease-in-out, rotate3d 20s infinite linear;
+    }
+
+    .shape-1 {
+      width: 80px;
+      height: 80px;
+      top: 10%;
+      left: 10%;
+      border-radius: 20px;
+      animation-delay: -2s;
+      transform-style: preserve-3d;
+    }
+
+    .shape-2 {
+      width: 120px;
+      height: 120px;
+      top: 70%;
+      right: 15%;
+      border-radius: 50%;
+      animation-delay: -5s;
+      transform-style: preserve-3d;
+    }
+
+    .shape-3 {
+      width: 60px;
+      height: 60px;
+      bottom: 20%;
+      left: 30%;
+      border-radius: 10px;
+      animation-delay: -3s;
+      transform: rotateZ(45deg);
+      transform-style: preserve-3d;
+    }
+
+    .shape-4 {
+      width: 90px;
+      height: 90px;
+      top: 30%;
+      right: 35%;
+      border-radius: 50%;
+      animation-delay: -7s;
+      transform-style: preserve-3d;
+    }
+
+    .shape-5 {
+      width: 40px;
+      height: 40px;
+      bottom: 40%;
+      left: 70%;
+      border-radius: 20px;
+      animation-delay: -4s;
+      transform-style: preserve-3d;
+    }
+
+    .hero-card {
+      background: rgba(18, 24, 34, 0.35);
+      box-shadow: 0 8px 32px rgba(0, 21, 48, 0.25), 0 2px 16px rgba(25, 69, 132, 0.15);
+      border-radius: 20px;
+      backdrop-filter: blur(12px) saturate(120%);
+      -webkit-backdrop-filter: blur(12px) saturate(120%);
+      padding: 2.5rem 2.2rem 2rem 2.2rem;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      border: 1px solid rgba(54, 161, 255, 0.2);
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .hero-card-border {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      border: 1px solid rgba(54, 161, 255, 0.3);
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: -1;
+      animation: pulse 4s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.4;
+      }
+
+      50% {
+        transform: scale(1.02);
+        opacity: 0.6;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 0.4;
+      }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(54, 161, 255, 0.9);
+      color: #fff;
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      box-shadow: 0 2px 8px rgba(0, 18, 34, 0.3);
+      z-index: 2;
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 50%;
+      animation: pulse-dot 2s infinite;
+    }
+
+    @keyframes pulse-dot {
+      0% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .hero-title {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: -0.8px;
+      color: #f8f9fa;
+      margin-bottom: 0.6rem;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .title-accent {
+      background: linear-gradient(135deg, #36a1ff, #1574cf);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: #cbd5e0;
+      margin-bottom: 1.8rem;
+      letter-spacing: 0.01em;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .hero-intro {
+      color: #a0aec0;
+      font-weight: 500;
+    }
+
+    .typed-cursor-container {
+      display: inline-block;
+      border-bottom: 2px solid #36a1ff;
+      padding-bottom: 0.05em;
+      color: #36a1ff;
+      font-weight: 600;
+      margin-left: 6px;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #36a1ff;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: #a0aec0;
+      font-weight: 400;
+    }
+
+    .stat-divider {
+      width: 1px;
+      height: 25px;
+      background: rgba(54, 161, 255, 0.3);
+      margin: 0 0.8rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      border: 1px solid rgba(54, 161, 255, 0.8);
+      color: #36a1ff;
+      background: transparent;
+      box-shadow: 0 2px 8px rgba(0, 18, 34, 0.2);
+      gap: 6px;
+    }
+
+    .hero-btn:hover {
+      background: rgba(54, 161, 255, 0.1);
+      color: #36a1ff;
+      box-shadow: 0 4px 12px rgba(54, 161, 255, 0.3);
+      transform: translateY(-1px);
+    }
+
+    .hero-btn.primary {
+      background: rgba(54, 161, 255, 0.9);
+      color: #fff;
+      border-color: #36a1ff;
+    }
+
+    .hero-btn.primary:hover {
+      background: #36a1ff;
+      border-color: #1574cf;
+      color: #fff;
+    }
+
+    .hero-btn.secondary {
+      border-color: rgba(54, 161, 255, 0.6);
+      color: #36a1ff;
+    }
+
+    .hero-btn.secondary:hover {
+      background: rgba(54, 161, 255, 0.1);
+      color: #36a1ff;
+      border-color: #36a1ff;
+    }
+
+    .hero-social-links {
+      margin-top: 1.5rem;
+      gap: 1.2rem !important;
+    }
+
+    .hero-social {
+      font-size: 1.3rem;
+      color: #36a1ff;
+      background: rgba(54, 161, 255, 0.08);
+      border-radius: 50%;
+      width: 2.2em;
+      height: 2.2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s cubic-bezier(.4, .6, .23, 1.2);
+      box-shadow: 0 2px 8px rgba(0, 18, 34, 0.15);
+      position: relative;
+      border: 1px solid rgba(54, 161, 255, 0.2);
+    }
+
+    .hero-social:hover,
+    .hero-social:focus {
+      color: #fff;
+      background: rgba(54, 161, 255, 0.9);
+      box-shadow: 0 4px 16px rgba(54, 161, 255, 0.4);
+      transform: translateY(-2px) scale(1.05);
+      border-color: #36a1ff;
+    }
+
+    .social-tooltip {
+      position: absolute;
+      top: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(54, 161, 255, 0.9);
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+      white-space: nowrap;
+      z-index: 1;
+    }
+
+    .hero-social:hover .social-tooltip,
+    .hero-social:focus .social-tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 2;
+    }
+
+    .scroll-line {
+      width: 30px;
+      height: 1px;
+      background: rgba(54, 161, 255, 0.6);
+      animation: pulse-scroll 1.8s infinite;
+    }
+
+    .scroll-text {
+      font-size: 0.8rem;
+      color: #a0aec0;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+    }
+
+    @keyframes pulse-scroll {
+      0% {
+        opacity: 0.6;
+        transform: scaleX(1);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scaleX(1.2);
+      }
+
+      100% {
+        opacity: 0.6;
+        transform: scaleX(1);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .hero-card {
+        max-width: 95vw;
+        padding: 2rem 1.5rem 1.8rem 1.5rem;
+        margin: 0 1rem;
+      }
+
+      .hero-title {
+        font-size: 2.2rem;
+      }
+
+      .hero-sub {
+        font-size: 1.1rem;
+      }
+
+      .hero-badge {
+        top: -10px;
+        padding: 3px 10px;
+        font-size: 0.75rem;
+      }
+
+      .badge-dot {
+        width: 5px;
+        height: 5px;
+      }
+
+      .hero-stats {
+        gap: 0.8rem;
+        margin-top: 1.2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .stat-number {
+        font-size: 1.8rem;
+      }
+
+      .stat-label {
+        font-size: 0.75rem;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+      }
+
+      .hero-social-links {
+        gap: 1rem;
+      }
+
+      .hero-social {
+        font-size: 1.2rem;
+        width: 2em;
+        height: 2em;
+      }
+
+      .social-tooltip {
+        top: -25px;
+        font-size: 0.65rem;
+      }
+
+      .scroll-indicator {
+
+        bottom: 15px;
+      }
+
+      .scroll-line {
+        width: 25px;
+      }
+
+      .scroll-text {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+
+  <script>
+    // HERO CARD SLIDE + FADE
+    document.addEventListener("DOMContentLoaded", function () {
+      gsap.to(".hero-title", { y: 0, opacity: 1, duration: 0.68, delay: 0.12, ease: "power3.out" });
+      gsap.to(".hero-sub", { y: 0, opacity: 1, duration: 0.65, delay: 0.26, ease: "power3.out" });
+      gsap.fromTo(".hero-social", { y: 20, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.11, duration: 0.53, delay: 0.51, ease: "power2.out" });
+    });
+  </script>
+
+  <script>
+    // Enhanced Typed.js initialization
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.Typed) {
+        new Typed(".typed-elite", {
+          strings: document.querySelector(".typed-elite").getAttribute("data-typed-items").split(","),
+          typeSpeed: 64,
+          backSpeed: 32,
+          backDelay: 1300,
+          loop: true,
+          smartBackspace: true,
+          showCursor: true,
+          cursorChar: "|",
+          autoInsertCss: true
+        });
+      }
+    });
+  </script>
+
+
 </body>
 
 </html>

@@ -1,0 +1,227 @@
+/* Enhanced Certification Cards - Based on Uiverse.io by Thomasfadi */
+
+/* Keep existing marquee controls and outer structure */
+.certs-marquee-controls {
+    width: 100%;
+    margin: 0 auto 0.5rem auto;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.certs-arrow-btn {
+    background: rgba(18, 28, 46, 0.99);
+    border: 1.5px solid #36a1ff;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #36a1ff;
+    cursor: pointer;
+    box-shadow: 0 2px 12px #0002;
+    transition: background 0.14s, color 0.14s, border 0.18s;
+    z-index: 3;
+}
+
+.certs-arrow-btn:hover,
+.certs-arrow-btn:focus {
+    background: #36a1ff;
+    color: #fff;
+    border: 1.5px solid #1574cf;
+}
+
+.certs-marquee-outer {
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    margin: 0 auto;
+    flex: 1 1 auto;
+    padding: 0 0.5vw;
+}
+
+/* Enhanced marquee with hover effects */
+.certs-marquee {
+    display: flex;
+    align-items: stretch;
+    gap: 2.1rem;
+    will-change: transform;
+    transition: transform 0.44s cubic-bezier(.61, .51, .32, 1.2);
+}
+
+/* Enhanced certification card design */
+.cert-card-mq {
+    flex: 0 0 160px;
+    max-width: 160px;
+    min-width: 120px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms ease;
+    margin: 0 0.05rem;
+    text-decoration: none !important;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+/* Different colors for variety */
+.cert-card-mq:nth-child(1) {
+    background: linear-gradient(135deg, #0d5aa7, #1574cf);
+}
+
+.cert-card-mq:nth-child(2) {
+    background: linear-gradient(135deg, #1574cf, #2d81ff);
+}
+
+.cert-card-mq:nth-child(3) {
+    background: linear-gradient(135deg, #2d81ff, #36a1ff);
+}
+
+.cert-card-mq:nth-child(4) {
+    background: linear-gradient(135deg, #0e4fa3, #1574cf);
+}
+
+.cert-card-mq:nth-child(5) {
+    background: linear-gradient(135deg, #1349b2, #2d81ff);
+}
+
+.cert-card-mq:nth-child(6) {
+    background: linear-gradient(135deg, #0d4280, #1574cf);
+}
+
+.cert-card-mq:nth-child(7) {
+    background: linear-gradient(135deg, #1a60d0, #36a1ff);
+}
+
+.cert-card-mq:nth-child(8) {
+    background: linear-gradient(135deg, #0d5aa7, #24c4ff);
+}
+
+/* Card content styling */
+.cert-card-mq img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.cert-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    line-height: 1.2;
+    color: white;
+}
+
+.cert-org {
+    font-size: 0.7rem;
+    font-weight: 400;
+    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Hover effects */
+.cert-card-mq:hover {
+    transform: scale(1.15);
+    z-index: 10;
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cert-card-mq:hover img {
+    transform: scale(1.1);
+}
+
+/* Group hover effect - blur others */
+.certs-marquee:hover .cert-card-mq:not(:hover) {
+    filter: blur(3px);
+    transform: scale(0.95);
+    opacity: 0.7;
+}
+
+/* Ensure smooth transitions for all cards */
+.certs-marquee .cert-card-mq {
+    transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1100px) {
+    .cert-card-mq {
+        flex: 0 0 140px;
+        max-width: 140px;
+        min-width: 110px;
+        height: 140px;
+    }
+
+    .cert-title {
+        font-size: 0.85rem;
+    }
+
+    .cert-org {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .certs-marquee {
+        gap: 1.5rem;
+    }
+
+    .cert-card-mq {
+        flex: 0 0 120px;
+        max-width: 120px;
+        min-width: 100px;
+        height: 120px;
+    }
+
+    .cert-card-mq img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 700px) {
+    .cert-card-mq {
+        flex: 0 0 100px;
+        max-width: 100px;
+        min-width: 85px;
+        height: 100px;
+    }
+
+    .cert-title {
+        font-size: 0.75rem;
+    }
+
+    .cert-org {
+        font-size: 0.6rem;
+    }
+
+    .cert-card-mq img {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    .certs-marquee {
+        gap: 1rem;
+    }
+
+    .certs-marquee-outer {
+        padding: 0 2px;
+    }
+}

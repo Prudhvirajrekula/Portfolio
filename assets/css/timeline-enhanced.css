@@ -1,0 +1,117 @@
+/* Enhanced Timeline Styles – matches glass-morphism & blue theme */
+
+/* Shared timeline container */
+.resume-timeline {
+    position: relative;
+    margin-left: 0;
+    /* remove margin */
+    /* space for line */
+    padding-left: 0 !important;
+    /* space for dotted line & dot */
+    /* space for line */
+}
+
+/* Tweak the connector line to dotted style */
+.resume-timeline::before {
+    content: "";
+    position: absolute;
+    left: 43px !important;
+    /* distance from left edge */
+    /* position dotted line outside the card */
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: repeating-linear-gradient(to bottom,
+            rgba(54, 161, 255, 0.8) 0px,
+            rgba(54, 161, 255, 0.8) 8px,
+            transparent 8px,
+            transparent 16px);
+    opacity: 0.8;
+}
+
+/* Timeline item */
+.resume-item {
+    position: relative;
+    background: rgba(26, 33, 47, 0.35);
+    border: 1px solid rgba(54, 161, 255, 0.25);
+    border-radius: 12px;
+    padding: 20px 20px 15px 22px !important;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 16px rgba(0, 18, 34, 0.25);
+    backdrop-filter: blur(8px) saturate(160%);
+    -webkit-backdrop-filter: blur(8px) saturate(160%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 80px !important;
+    /* same as line left + half dot */
+}
+
+/* Hover lift */
+.resume-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(54, 161, 255, 0.35);
+}
+
+/* Dot marker */
+.resume-item::before {
+    content: "\f111";
+    /* Font Awesome solid circle */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: -42px !important;
+    /* 20 - (dot width/2)      => centers dot on line */
+    top: 18px;
+    font-size: 9px;
+    color: #36a1ff;
+    background: rgba(18, 24, 34, 1);
+    border: 2px solid rgba(54, 161, 255, 0.6);
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Title styling */
+.resume-item h4 {
+    color: #f8f9fa;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.resume-item h5 {
+    color: #36a1ff;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+.resume-item .resume-date {
+    display: inline-block;
+    background: rgba(54, 161, 255, 0.15);
+    color: #a0c4ff;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+/* Responsive tweaks */
+@media(max-width: 768px) {
+    .resume-timeline {
+        padding-left: 40px;
+    }
+
+    .resume-timeline::before {
+        left: 30px !important;
+    }
+
+    .resume-item {
+        margin-left: 68px !important;
+    }
+
+    .resume-item::before {
+        left: -30px !important;
+    }
+}
