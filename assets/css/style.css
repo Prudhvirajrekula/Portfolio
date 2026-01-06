@@ -453,78 +453,39 @@ body::before {
   letter-spacing: 1px;
 }
 
-
 #hero .social-links {
-  display: flex;
-  gap: 1.1rem;
-  margin-top: 1.2rem;
-  padding: 0;
-  justify-content: flex-start;
-  width: 100%;
-  max-width: 420px;
+  margin-top: 30px;
 }
 
 #hero .social-links a {
-  font-size: 1rem;
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 50%;
-  padding: 0.6rem;
-  transition: 0.2s ease-in-out;
+  font-size: 24px;
+  display: inline-block;
+  color: #e8e6e3;
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
 }
 
 #hero .social-links a:hover {
-  background: #36a1ff;
-  color: #fff;
+  color: #0563bb;
 }
 
+@media (max-width: 992px) {
+  #hero {
+    text-align: center;
+  }
 
-@media (max-width: 768px) {
-  #hero .social-links {
-    justify-content: center;
+  #hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  #hero p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
-
-/* Make the social icons smaller */
-.social-links .icon-content a {
-  width: 30px;
-  /* Reduced from 50px */
-  height: 30px;
-  /* Reduced from 50px */
-}
-
-.social-links .icon-content a svg {
-  width: 20px;
-  /* Reduced from 30px */
-  height: 20px;
-  /* Reduced from 30px */
-}
-
-/* Adjust tooltip position for smaller icons */
-.social-links .icon-content .tooltip {
-  top: -25px;
-  /* Adjusted from -30px */
-  font-size: 12px;
-  /* Reduced from 14px */
-}
-
-.social-links .icon-content:hover .tooltip {
-  top: -40px;
-  /* Adjusted from -50px */
-}
-
-/* Adjust spacing between icons */
-.social-links .icon-content {
-  margin: 0 6px;
-  /* Reduced from 10px */
-}
-
-/* Adjust overall margin */
-.social-links {
-  margin: 10px 0;
-  /* Reduced from 30px */
-}
-
 
 section {
   padding: 60px 0;
